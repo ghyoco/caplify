@@ -1,0 +1,38 @@
+/**
+ * High-contrast cinema styling for Caplify native captions.
+ */
+
+.caplify-native-caption {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2147483647;
+  pointer-events: none;
+  max-width: 85%;
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.78);
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.2px;
+  transition: opacity 0.25s ease-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.caplify-partial {
+  color: #e0e0e0;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.caplify-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
